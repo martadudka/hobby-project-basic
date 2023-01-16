@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian Cuisine 🍕</title>
+    <style>
+      body {
+        border: 1px solid black;
+        border-radius: 20px;
+        max-width: 800px;
+        margin: 5px auto;
+      }
+      h1 {
+        color: black;
+        font-size: 35px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        color: black;
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      hr {
+        width: 7%;
+        margin: 5px auto;
+      }
+      img {
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+        border-radius: 20px;
+      }
+      p {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin: 10px auto;
+        padding: 10px 10px;
+        max-width: 700px;
+        background: linear-gradient(#0d0d0d, #414040);
+        text-align: justify;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #ef9080;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 20px 30px;
+        box-shadow: rgb(241, 142, 124) 0 2px 2px;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .para-part-2 {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin: 10px auto;
+        max-width: 700px;
+        padding: 10px 10px;
+        background: linear-gradient(#414040, #737171);
+        text-align: justify;
+      }
+      .learn-more {
+        color: #ef9080;
+        text-decoration: none;
+        display: block;
+        margin: 5px;
+        text-align: center;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .closing-line {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px auto;
+      }
+      .instagram {
+        color: #0d0d0d;
+        text-decoration: none;
+      }
+      .instagram:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Italian cuisine
+      <hr />
+    </h1>
+    <h2>
+      <em> Cucina italiana </em>
+    </h2>
+    <img
+      src="https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"
+      alt="food"
+    />
+    <p>
+      <strong>Italian cuisine</strong> is one of the best known and most
+      appreciated gastronomies worldwide. The Mediterranean diet forms the basis
+      of Italian cuisine, rich in <em>pasta, fish, fruits and vegetables</em>.
+      <em>Cheese, cold cuts and wine</em> are central to Italian cuisine, and
+      along with <em>pizza and coffee</em> (especially espresso) form part of
+      Italian gastronomic culture. Desserts have a long tradition of merging
+      local flavours such as <em>citrus fruits, pistachio and almonds</em> with
+      sweet cheeses like <em>mascarpone and ricotta</em> or exotic tastes as
+      <em>cocoa, vanilla and cinnamon</em>.
+    </p>
+    <div class="para-part-2">
+      Italian cuisine relies heavily on traditional products; the country has a
+      large number of traditional specialities protected under EU law. Italy is
+      the world's largest producer of <strong>wine</strong>, as well as the
+      country with the widest variety of indigenous
+      <strong>grapevine</strong> varieties in the world. <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Italian_cuisine"
+        target="_blank"
+        title="wikipedia"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+    </div>
+    <button class="tryItalianCuisine">👉 Try Italian cuisine</button>
+    <div class="closing-line">
+      This page was built by
+      <a
+        href="https://www.instagram.com/marta_dudka/"
+        target="_blank"
+        title="instagram"
+        class="instagram"
+      >
+        <strong> Marta Dudka </strong>
+      </a>
+    </div>
+    <script>
+      function tryItalianCuisine() {
+        let name = prompt("What is your name?");
+        let dish = prompt("What is your favorite Italian dish?");
+        let city = prompt("What is your favourite Italian city?");
+        let reply = `${name}, try ${dish} in ${city}!`;
+        alert(reply);
+      }
+
+      let tryItalianCuisineButton =
+        document.querySelector(".tryItalianCuisine");
+      tryItalianCuisineButton.addEventListener("click", tryItalianCuisine);
+    </script>
+  </body>
+</html>
